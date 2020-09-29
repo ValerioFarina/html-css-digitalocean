@@ -1,7 +1,17 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+
 /* ----- Inizio nav-top ----- */
 #nav-top {
     display: none;
     height: 40px;
+    padding: 0 15px;
+    background-color: white;
 }
 
 #nav-top a {
@@ -51,6 +61,9 @@
 /* ----- Inizio navbar ----- */
 .navbar-default {
     background-color: white;
+    margin-bottom: 0;
+    padding: 0 15px;
+    border-radius: 0;
 }
 
 .navbar-brand {
@@ -68,7 +81,7 @@
     color: rgb(3, 27, 79);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     padding: 20px 12px;
     height: 65px;
     text-align: bottom;
@@ -130,12 +143,162 @@
 .navbar-header {
     float: none;
 }
+/* ----- Fine navbar ----- */
+
+/* ----- Inizio jumbotron ----- */
+.jumbotron {
+    background-color: #0069ff;
+    margin-bottom: 0;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    color: white;
+}
+
+.jumbotron .intro p {
+    font-weight: 300;
+    font-size: 26px;
+    margin: 40px 0;
+}
+
+.jumbotron .sign-up-box {
+    background-color: white;
+    margin: 0 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    max-width: 370px;
+}
+
+.jumbotron .sign-up-box h4 {
+    padding: 20px 30px;
+    background-color: #f3f5f9;
+    margin: 0;
+}
+
+.jumbotron .sign-up-box .main {
+    border-bottom: 1px solid #8080803d;
+}
+
+.jumbotron .sign-up-box .main,
+.jumbotron .sign-up-box .footer {
+    padding: 35px;
+}
+
+.jumbotron .sign-up-box form {
+    width: 100%;
+}
+
+.jumbotron .sign-up-box form input {
+    width: 100%;
+    border: 1px solid #8080803d;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.jumbotron .sign-up-box form input:focus {
+    outline: none;
+    border: 1px solid #006aff;
+}
+
+.jumbotron .sign-up-box .btn {
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.jumbotron .sign-up-box .main .btn {
+    padding: 20px 0;
+    background-color: #006aff;
+    color: white;
+    border-color: #006aff;
+    width: 100%;
+}
+
+.jumbotron .sign-up-box .main .btn:hover {
+    background-color: #1633ff;
+}
+
+.jumbotron .sign-up-box .footer .btn:hover {
+    background-color: transparent;
+    border-color: #363636;
+}
+
+.jumbotron .sign-up-box .footer .btn:hover span {
+    color: #363636;
+}
+
+.jumbotron .sign-up-box .footer .btn {
+    border-color: #006aff;
+    padding: 15px 0;
+    color: #006aff;
+}
+
+.jumbotron .sign-up-box .footer .btn:first-child {
+    width: 80%;
+    margin-right: 5px;
+}
+
+.jumbotron .sign-up-box .footer .btn:last-child {
+    width: calc(20% - 5px);
+}
+
+.jumbotron .terms-service {
+    font-weight: 400;
+    margin: 10px 0 0 0;
+    font-size: 17px;
+}
+
+.jumbotron .terms-service a {
+    color: white;
+}
+
+.jumbotron .terms-service a:hover {
+    text-decoration: none;
+    border-bottom: dotted 1px rgba(255,255,255,0.5);
+}
+/* ----- Fine jumbotron ----- */
+
+/* ----- Inizio media query ----- */
+@media screen and (min-width: 992px) {
+    .jumbotron .sign-up-box {
+        max-width: 100%;
+    }
+
+    .jumbotron .intro p,
+    .jumbotron .intro h1 {
+        text-align: left;
+    }
+
+    .jumbotron .intro {
+        margin-top: 120px;
+    }
+}
 
 @media screen and (min-width: 1024px) {
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
     #nav-top {
         display: block;
     }
 
+    .jumbotron {
+        margin-top: 107px;
+    }
+}
+
+@media screen and (min-width: 1090px) {
     .navbar-toggle {
         display: none;
     }
@@ -148,3 +311,4 @@
         float: left;
     }
 }
+/* ----- Fine media query ----- */
