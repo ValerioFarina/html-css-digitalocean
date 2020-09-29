@@ -264,6 +264,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* ----- Fine jumbotron ----- */
 
+/* ----- Inizio sezione business ----- */
+#business {
+    text-align: center;
+    background-color: #f3f5f9;
+    padding: 64px 0;
+}
+
+#business h5 {
+    color: #5b6987;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#business a {
+    display: inline-block;
+    margin-top: 40px;
+    color: #0069ff;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#business a:hover {
+    color: #1633ff;
+}
+
+#business a i {
+    font-size: 10px;
+    margin-left: 2px;
+}
+/* ----- Fine sezione business ----- */
+
+
 /* ----- Inizio media query ----- */
 @media screen and (min-width: 992px) {
     .jumbotron .sign-up-box {
