@@ -434,7 +434,87 @@ section .intro p {
 }
 /* ----- Fine sezione info ----- */
 
+/* ----- Inizio sezione data ----- */
+#data {
+    background-color: rgb(3, 27, 78);
+    background-image: url("https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+}
+
+#data a {
+    text-decoration: none;
+}
+
+#data .intro h2,
+#data .intro p {
+    color: white;
+}
+
+#data .intro p {
+    margin-bottom: 80px;
+}
+
+#data .intro p a {
+    color: #0069ff;
+    font-weight: 400;
+}
+
+#data .intro p a:hover {
+    color: #1633ff;
+}
+
+#data #table {
+    text-align: left;
+}
+
+#data #table .cell.left {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    padding-left: 8px;
+}
+
+#data #table .cell.center {
+    color: #fff;
+    opacity: 0.6;
+}
+
+#data #table .cell.right {
+    padding-right: 8px;
+}
+
+#data #table .cell.right a {
+    color: #00d7d2;
+}
+
+#data #table .cell.right a:hover {
+    color: #1633ff;
+}
+
+#data #table .cell.right a i {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#data #table hr {
+    border: 0;
+    border-bottom: 1px solid #eeeeee3b;
+    margin: 10px 0;
+}
+/* ----- Fine sezione data ----- */
+
+
 /* ----- Inizio media queries ----- */
+@media screen and (min-width: 468px) {
+    #data #table {
+        max-width: 455px;
+        margin: auto;
+    }
+}
+
 @media screen and (min-width: 768px) {
     #features div:not(.intro) {
         text-align: left;
@@ -448,6 +528,10 @@ section .intro p {
     #features ul li a {
         border: 0;
         border-left: 2px solid #f3f5f9;
+    }
+
+    #data #table {
+        max-width: 100%;
     }
 }
 
@@ -471,6 +555,10 @@ section .intro p {
 
     #info .feature p {
         max-width: 100%;
+    }
+
+    #data #table hr.last {
+        display: none;
     }
 }
 
