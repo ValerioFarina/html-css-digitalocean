@@ -279,6 +279,7 @@ section .intro {
 
 section .intro h2 {
     color: #031b4e;
+    margin: 0 0 20px 0;
     font-size: 36px;
 }
 
@@ -322,10 +323,6 @@ section .intro p {
 /* ----- Fine sezione business ----- */
 
 /* ----- Inizio sezione features ----- */
-#features h2 {
-    margin: 0 0 20px 0;
-}
-
 #features ul {
     list-style-type: none;
     padding: 0;
@@ -370,6 +367,42 @@ section .intro p {
     font-weight: 400;
 }
 /* ----- Fine sezione features ----- */
+
+/* ----- Inizio sezione developers ----- */
+#developers {
+    background-color: #f3f5f9;
+}
+
+#developers .carousel img {
+    max-width: 80%;
+    margin: 50px 0 25px 0;
+}
+
+#developers .carousel p {
+    color: rgba(3, 27, 78, 0.6);
+    font-size: 17px;
+    font-weight: 400;
+    max-width: 80%;
+    margin: auto;
+}
+
+#developers .carousel .circles {
+    margin-top: 25px;
+}
+
+#developers .carousel .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #0069ff;
+    margin: 5px;
+}
+
+#developers .carousel .circle:hover {
+    background-color: #0069ff;
+}
+/* ----- Fine sezione developers ----- */
 
 /* ----- Inizio media queries ----- */
 @media screen and (min-width: 768px) {
