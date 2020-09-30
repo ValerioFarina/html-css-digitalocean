@@ -148,9 +148,13 @@ h1, h2, h3, h4, h5, h6 {
 /* ----- Inizio jumbotron ----- */
 .jumbotron {
     background-color: #0069ff;
+    background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
+    background-size: cover;
+    background-position: center;
     margin-bottom: 0;
     padding: 150px 0;
     text-align: center;
+    position: relative;
 }
 
 .jumbotron h1,
@@ -174,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron .sign-up-box h4 {
-    padding: 20px 30px;
+    padding: 22px 30px;
     background-color: #f3f5f9;
     margin: 0;
 }
@@ -196,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     border: 1px solid #8080803d;
     border-radius: 2px;
-    padding: 15px;
+    padding: 11px;
     font-size: 17px;
     font-weight: 400;
     margin-bottom: 10px;
@@ -213,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron .sign-up-box .main .btn {
-    padding: 20px 0;
+    padding: 16px 0;
     background-color: #006aff;
     color: white;
     border-color: #006aff;
@@ -235,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .jumbotron .sign-up-box .footer .btn {
     border-color: #006aff;
-    padding: 15px 0;
+    padding: 11px 0;
     color: #006aff;
 }
 
@@ -263,6 +267,26 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: dotted 1px rgba(255,255,255,0.5);
 }
 /* ----- Fine jumbotron ----- */
+
+section {
+    padding: 120px 0;
+    text-align: center;
+}
+
+section .intro {
+    text-align: center;
+}
+
+section .intro h2 {
+    color: #031b4e;
+    font-size: 36px;
+}
+
+section .intro p {
+    color: #5b6987;
+    font-size: 20px;
+    font-weight: 300;
+}
 
 /* ----- Inizio sezione business ----- */
 #business {
@@ -297,8 +321,73 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* ----- Fine sezione business ----- */
 
+/* ----- Inizio sezione features ----- */
+#features h2 {
+    margin: 0 0 20px 0;
+}
 
-/* ----- Inizio media query ----- */
+#features ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+#features ul li {
+    display: inline-block;
+}
+
+#features ul li a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgba(3, 27, 78, 0.6);
+    font-weight: 700;
+    border-bottom: 2px solid #f3f5f9;
+}
+
+#features ul li a:hover {
+    color: #031b4e;
+    border-color: #0069ff;
+}
+
+.feature {
+    margin-top: 40px;
+}
+
+.feature img {
+    margin: 15px 0 20px 0;
+}
+
+.feature h5 {
+    color: #031b4e;
+    font-size: 18px;
+}
+
+.feature p {
+    color: rgba(3, 27, 78, 0.6);
+    font-size: 17px;
+    font-weight: 400;
+}
+/* ----- Fine sezione features ----- */
+
+/* ----- Inizio media queries ----- */
+@media screen and (min-width: 768px) {
+    #features div:not(.intro) {
+        text-align: left;
+    }
+
+    #features ul li,
+    #features ul li a {
+        display: block;
+    }
+
+    #features ul li a {
+        border: 0;
+        border-left: 2px solid #f3f5f9;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .jumbotron .sign-up-box {
         max-width: 100%;
@@ -328,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .jumbotron {
-        margin-top: 107px;
+        padding-top: 257px;
     }
 }
 
@@ -345,4 +434,4 @@ h1, h2, h3, h4, h5, h6 {
         float: left;
     }
 }
-/* ----- Fine media query ----- */
+/* ----- Fine media queries ----- */
