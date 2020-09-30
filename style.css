@@ -359,6 +359,7 @@ section .intro p {
 .feature h5 {
     color: #031b4e;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .feature p {
@@ -404,6 +405,35 @@ section .intro p {
 }
 /* ----- Fine sezione developers ----- */
 
+/* ----- Inizio sezione info ----- */
+#info .feature:not(.last) {
+    margin-bottom: 50px;
+}
+
+#info .feature p {
+    max-width: 80%;
+    margin: auto;
+}
+
+#info .feature a {
+    display: inline-block;
+    color: #0069ff;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#info .feature a:hover {
+    color: #1633ff;
+}
+
+#info .feature a i {
+    font-size: 10px;
+    margin-left: 2px;
+}
+/* ----- Fine sezione info ----- */
+
 /* ----- Inizio media queries ----- */
 @media screen and (min-width: 768px) {
     #features div:not(.intro) {
@@ -433,6 +463,14 @@ section .intro p {
 
     .jumbotron .intro {
         margin-top: 120px;
+    }
+
+    #info div:not(.intro) {
+        text-align: left;
+    }
+
+    #info .feature p {
+        max-width: 100%;
     }
 }
 
