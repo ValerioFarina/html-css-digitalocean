@@ -374,16 +374,21 @@ section .intro p {
     background-color: #f3f5f9;
 }
 
+#developers .carousel {
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 #developers .carousel img {
-    max-width: 80%;
     margin: 50px 0 25px 0;
+    width: 100%;
 }
 
 #developers .carousel p {
     color: rgba(3, 27, 78, 0.6);
     font-size: 17px;
     font-weight: 400;
-    max-width: 80%;
     margin: auto;
 }
 
@@ -400,7 +405,7 @@ section .intro p {
     margin: 5px;
 }
 
-.carousel .circle:hover {
+.carousel .circle.current {
     background-color: #0069ff;
 }
 /* ----- Fine sezione developers ----- */
@@ -515,6 +520,10 @@ section .intro p {
 
 #teams .intro p a:hover {
     color: #1633ff;
+}
+
+#teams .carousel {
+    position: relative;
 }
 
 #teams .carousel .box {
@@ -736,6 +745,29 @@ footer .bottom-right a {
         margin-top: 120px;
     }
 
+    #developers .carousel {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #developers .carousel::before {
+        content: "←";
+        font-size: 30px;
+        color: grey;
+        position: absolute;
+        left: 0;
+        top: 45%;
+    }
+
+    #developers .carousel::after {
+        content: "→";
+        font-size: 30px;
+        color: grey;
+        position: absolute;
+        right: 0;
+        top: 45%;
+    }
+
     #info div:not(.intro) {
         text-align: left;
     }
@@ -746,6 +778,29 @@ footer .bottom-right a {
 
     #data #table hr.last {
         display: none;
+    }
+
+    #teams .carousel {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #teams .carousel::before {
+        content: "←";
+        font-size: 30px;
+        color: grey;
+        position: absolute;
+        left: 0;
+        top: 35%;
+    }
+
+    #teams .carousel::after {
+        content: "→";
+        font-size: 30px;
+        color: grey;
+        position: absolute;
+        right: 0;
+        top: 35%;
     }
 
     #cta .left {
