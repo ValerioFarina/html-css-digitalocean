@@ -8,20 +8,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----- Inizio nav-top ----- */
 #nav-top {
+    background-color: white;
     display: none;
     height: 40px;
     padding: 0 15px;
-    background-color: white;
 }
 
 #nav-top a {
+    color: #5b6987e3;
     display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
     height: 40px;
     line-height: 40px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    color: #5b6987e3;
     text-decoration: none;
 }
 
@@ -41,16 +41,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #nav-top .pull-left span {
     background-color: rgb(0,215,210);
-    display: inline-block;
-    height: 22px;
-    line-height: 22px;
-    padding: 0 8px;
     border-radius: 6px;
-    margin: 9px 9px 9px 0;
-    text-transform: uppercase;
-    font-size: 11px;
     color: rgb(3,27,78);
     cursor: context-menu;
+    display: inline-block;
+    font-size: 11px;
+    height: 22px;
+    line-height: 22px;
+    margin: 9px 9px 9px 0;
+    padding: 0 8px;
+    text-transform: uppercase;
 }
 
 #nav-top .pull-right a {
@@ -61,87 +61,87 @@ h1, h2, h3, h4, h5, h6 {
 /* ----- Inizio navbar ----- */
 .navbar-default {
     background-color: white;
+    border-radius: 0;
     margin-bottom: 0;
     padding: 0 15px;
-    border-radius: 0;
 }
 
-.navbar-brand {
-    height: 65px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    margin-right: 30px;
-}
-
-.navbar-brand img {
-    height: 29px;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: rgb(3, 27, 79);
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 20px 12px;
-    height: 65px;
-    text-align: bottom;
-    line-height: 25px;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color: #006aff;
-}
-
-.navbar-default .navbar-nav .dropdown i {
-    color: #5b698785;
-}
-
-.navbar-default .navbar-nav .btn {
-    height: 37px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.navbar-default .navbar-nav .btn:first-child {
-    margin-right: 10px;
-    border-color: #006aff;
-    color: #006aff;
-    transition: all 0.3s linear;
-}
-
-.navbar-default .navbar-nav .btn:first-child:hover {
-    background-color: #006aff;
-    color: white;
-}
-
-.navbar-default .navbar-nav .btn:last-child {
-    background-color: #006aff;
-    color: white;
-    border-color: #006aff;
+.navbar-header {
+    float: none;
 }
 
 .navbar-toggle {
-    display: block;
     border: 0;
-    margin-top: 16px;
+    display: block;
     margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
 
+.navbar-brand {
+    height: 65px;
+    margin-right: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.navbar-brand img {
+    height: 29px;
+}
+
 .navbar-collapse.collapse {
     display: none!important;
 }
 
-.navbar-header {
-    float: none;
+.navbar-default .navbar-nav > li > a {
+    color: rgb(3, 27, 79);
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    height: 65px;
+    line-height: 25px;
+    padding: 20px 12px;
+    text-align: bottom;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #006aff;
+}
+
+.navbar-default .navbar-nav > .dropdown > a > i {
+    color: #5b698785;
+}
+
+.navbar-default .navbar-right .btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    height: 37px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-default .navbar-right .btn:first-child {
+    border-color: #006aff;
+    color: #006aff;
+    margin-right: 10px;
+    transition: all 0.3s linear;
+}
+
+.navbar-default .navbar-right .btn:first-child:hover {
+    background-color: #006aff;
+    color: white;
+}
+
+.navbar-default .navbar-right .btn:last-child {
+    background-color: #006aff;
+    border-color: #006aff;
+    color: white;
 }
 /* ----- Fine navbar ----- */
 
@@ -149,12 +149,12 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron {
     background-color: #0069ff;
     background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     margin-bottom: 0;
     padding: 150px 0;
-    text-align: center;
     position: relative;
+    text-align: center;
 }
 
 .jumbotron h1,
@@ -163,24 +163,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron .intro p {
-    font-weight: 300;
     font-size: 26px;
+    font-weight: 300;
     margin: 40px 0;
 }
 
 .jumbotron .sign-up-box {
     background-color: white;
-    margin: 0 40px;
     border-radius: 8px;
-    overflow: hidden;
     margin: auto;
     max-width: 370px;
+    overflow: hidden;
 }
 
 .jumbotron .sign-up-box h4 {
-    padding: 22px 30px;
     background-color: #f3f5f9;
     margin: 0;
+    padding: 22px 30px;
 }
 
 .jumbotron .sign-up-box .main {
@@ -197,35 +196,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron .sign-up-box form input {
-    width: 100%;
     border: 1px solid #8080803d;
     border-radius: 2px;
-    padding: 11px;
     font-size: 17px;
     font-weight: 400;
     margin-bottom: 10px;
+    padding: 11px;
+    width: 100%;
 }
 
 .jumbotron .sign-up-box form input:focus {
-    outline: none;
     border: 1px solid #006aff;
+    outline: none;
 }
 
 .jumbotron .sign-up-box .btn {
-    font-weight: 900;
     font-size: 17px;
+    font-weight: 900;
 }
 
 .jumbotron .sign-up-box .main .btn {
-    padding: 16px 0;
     background-color: #006aff;
-    color: white;
     border-color: #006aff;
+    color: white;
+    padding: 16px 0;
     width: 100%;
 }
 
 .jumbotron .sign-up-box .main .btn:hover {
     background-color: #1633ff;
+}
+
+.jumbotron .sign-up-box .footer .btn {
+    border-color: #006aff;
+    color: #006aff;
+    padding: 11px 0;
+}
+
+.jumbotron .sign-up-box .footer .btn:first-child {
+    margin-right: 5px;
+    width: 80%;
+}
+
+.jumbotron .sign-up-box .footer .btn:last-child {
+    width: calc(20% - 5px);
 }
 
 .jumbotron .sign-up-box .footer .btn:hover {
@@ -237,25 +251,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #363636;
 }
 
-.jumbotron .sign-up-box .footer .btn {
-    border-color: #006aff;
-    padding: 11px 0;
-    color: #006aff;
-}
-
-.jumbotron .sign-up-box .footer .btn:first-child {
-    width: 80%;
-    margin-right: 5px;
-}
-
-.jumbotron .sign-up-box .footer .btn:last-child {
-    width: calc(20% - 5px);
-}
-
 .jumbotron .terms-service {
+    font-size: 17px;
     font-weight: 400;
     margin: 10px 0 0 0;
-    font-size: 17px;
 }
 
 .jumbotron .terms-service a {
@@ -263,24 +262,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron .terms-service a:hover {
-    text-decoration: none;
     border-bottom: dotted 1px rgba(255,255,255,0.5);
+    text-decoration: none;
 }
 /* ----- Fine jumbotron ----- */
 
 section {
-    padding: 120px 0;
-    text-align: center;
-}
-
-section .intro {
+    padding: 64px 0;
     text-align: center;
 }
 
 section .intro h2 {
     color: #031b4e;
-    margin: 0 0 20px 0;
     font-size: 36px;
+    margin: 0 0 20px 0;
 }
 
 section .intro p {
@@ -291,7 +286,6 @@ section .intro p {
 
 /* ----- Inizio sezione business ----- */
 #business {
-    text-align: center;
     background-color: #f3f5f9;
     padding: 64px 0;
 }
@@ -299,16 +293,16 @@ section .intro p {
 #business h5 {
     color: #5b6987;
     font-size: 16px;
-    text-transform: uppercase;
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 #business a {
-    display: inline-block;
-    margin-top: 40px;
     color: #0069ff;
-    font-weight: 700;
+    display: inline-block;
     font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
     text-decoration: none;
 }
 
@@ -325,8 +319,8 @@ section .intro p {
 /* ----- Inizio sezione features ----- */
 #features ul {
     list-style-type: none;
-    padding: 0;
     margin-top: 40px;
+    padding: 0;
 }
 
 #features ul li {
@@ -334,18 +328,18 @@ section .intro p {
 }
 
 #features ul li a {
+    border-bottom: 2px solid #f3f5f9;
+    color: rgba(3, 27, 78, 0.6);
     display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
     padding: 15px 20px;
     text-decoration: none;
-    font-size: 17px;
-    color: rgba(3, 27, 78, 0.6);
-    font-weight: 700;
-    border-bottom: 2px solid #f3f5f9;
 }
 
 #features ul li a:hover {
-    color: #031b4e;
     border-color: #0069ff;
+    color: #031b4e;
 }
 
 .feature {
@@ -375,9 +369,9 @@ section .intro p {
 }
 
 #developers .carousel {
-    position: relative;
     padding-left: 5%;
     padding-right: 5%;
+    position: relative;
 }
 
 #developers .carousel img {
@@ -397,12 +391,12 @@ section .intro p {
 }
 
 .carousel .circle {
-    display: inline-block;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
     border: 2px solid #0069ff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 11px;
     margin: 5px;
+    width: 11px;
 }
 
 .carousel .circle.current {
@@ -416,17 +410,17 @@ section .intro p {
 }
 
 #info .feature p {
-    max-width: 80%;
     margin: auto;
+    max-width: 80%;
 }
 
 #info .feature a {
-    display: inline-block;
     color: #0069ff;
-    font-weight: 700;
+    display: inline-block;
     font-size: 16px;
-    text-decoration: none;
+    font-weight: 700;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 #info .feature a:hover {
@@ -476,10 +470,10 @@ section .intro p {
 
 #data #table .cell.left {
     color: white;
-    text-transform: uppercase;
-    font-weight: 700;
     font-size: 13px;
+    font-weight: 700;
     padding-left: 8px;
+    text-transform: uppercase;
 }
 
 #data #table .cell.center {
@@ -514,8 +508,8 @@ section .intro p {
 /* ----- Inizio sezione teams ----- */
 #teams .intro p a {
     color: #0069ff;
-    text-decoration: none;
     font-weight: 400;
+    text-decoration: none;
 }
 
 #teams .intro p a:hover {
@@ -528,10 +522,10 @@ section .intro p {
 
 #teams .carousel .box {
     background-color: white;
-    padding: 64px;
-    margin: 80px 0;
     border-radius: 8px;
     box-shadow: 0px 5px 3px -1px rgba(0,0,0,0.05);
+    margin: 80px 0;
+    padding: 64px;
 }
 
 #teams .carousel .box .logo img {
@@ -546,8 +540,8 @@ section .intro p {
 }
 
 #teams .carousel .box .quotation img {
-    width: 21px;
     height: 17px;
+    width: 21px;
 }
 
 #teams .carousel .box .name,
@@ -556,8 +550,8 @@ section .intro p {
 }
 
 #teams .carousel .box .name {
-    font-weight: 400;
     font-size: 18px;
+    font-weight: 400;
 }
 
 #teams .carousel .box .role {
@@ -568,34 +562,31 @@ section .intro p {
 
 /* ----- Inizio sezione cta ----- */
 #cta {
-    padding: 64px 0;
     background-color: #0069ff;
     background-image: url(https://prismic-io.s3.amazonaws.com/www-static/b4ba92a9-0956-484b-9a3f-68ef4d550fd4_bg-home-cta.svg);
+    padding: 64px 0;
 }
 
-#cta .left,
 #cta .right {
-    height: 84px;
-    padding: 12px 0;
+    margin-top: 30px;
 }
 
-#cta h2 {
+#cta .left h2 {
+    color: white;
     font-size: 40px;
     margin: 0;
-    color: white;
-    line-height: 30px;
 }
 
-#cta .btn {
-    height: 60px;
-    padding: 0 40px;
-    font-weight: 700;
-    font-size: 18px;
+#cta .right .btn {
     color: #006aff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 60px;
+    padding: 0 30px;
     transition: all 0.1s linear;
 }
 
-#cta .btn:hover {
+#cta .right .btn:hover {
     background-color: #e6e6e6;
     border-color: #adadad;
 }
@@ -603,20 +594,30 @@ section .intro p {
 
 /* ----- Inizio footer ----- */
 footer {
-    padding: 48px 0;
     background-color: rgb(1, 14, 40);
+    padding: 48px 0;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 footer .menu .sub-menu {
-    width: 100%;
     padding: 12px;
+    width: 100%;
 }
 
 footer .menu h6 {
     color: white;
-    margin: 0 0 24px 0;
     font-size: 15px;
     font-weight: 400;
+    margin: 0 0 24px 0;
 }
 
 footer .menu ul {
@@ -628,16 +629,6 @@ footer .menu ul li {
     margin-bottom: 10px;
 }
 
-footer a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-footer a:hover {
-    color: white;
-    text-decoration: none;
-}
-
 footer hr {
     border: 0;
     border-bottom: 1px solid #eeeeee3b;
@@ -645,43 +636,40 @@ footer hr {
 }
 
 footer .bottom-left {
-    max-width: 370px;
     margin: auto;
     margin-bottom: 20px;
+    max-width: 370px;
 }
 
-footer .logo {
-    width: 50px;
+footer .bottom-left .logo {
     margin: 0 20px 0 10px;
+    width: 50px;
 }
 
-footer .logo img {
+footer .bottom-left .logo img {
     width: 100%;
 }
 
-footer .copyright {
-    width: calc(100% - 80px);
+footer .bottom-left .copyright {
     text-align: left;
+    width: calc(100% - 80px);
 }
 
-footer .copyright p {
+footer .bottom-left .copyright p {
     color: rgba(255, 255, 255, 0.5);
-    padding: 15px 0;
     margin: 0;
+    padding: 15px 0;
 }
 
 footer .bottom-right {
+    font-size: 20px;
     height: 50px;
     line-height: 50px;
-    font-size: 20px;
     text-align: center;
 }
 
 footer .bottom-right a {
     display: inline-block;
-}
-
-footer .bottom-right a {
     margin-right: 10px;
 }
 /* ----- Fine footer ----- */
@@ -692,17 +680,21 @@ footer .bottom-right a {
         max-width: 200px;
     }
 
-    #cta h2 {
-        line-height: 60px;
-    }
-
     footer .menu .sub-menu {
         width: 50%;
     }
 }
 
+@media screen and (min-width: 468px) {
+    #data #table {
+        margin: auto;
+        max-width: 450px;
+    }
+}
+
 @media screen and (min-width: 768px) {
-    #features div:not(.intro) {
+    #features .feature,
+    #features ul {
         text-align: left;
     }
 
@@ -721,8 +713,8 @@ footer .bottom-right a {
     }
 
     footer .bottom-left {
-        max-width: 100%;
         margin-bottom: 0;
+        max-width: 100%;
     }
 
     footer .bottom-right {
@@ -751,29 +743,39 @@ footer .bottom-right a {
     }
 
     #developers .carousel::before {
+        color: grey;
         content: "←";
         font-size: 30px;
-        color: grey;
-        position: absolute;
         left: 0;
+        position: absolute;
         top: 45%;
     }
 
     #developers .carousel::after {
+        color: grey;
         content: "→";
         font-size: 30px;
-        color: grey;
         position: absolute;
         right: 0;
         top: 45%;
     }
 
-    #info div:not(.intro) {
+    #info .feature {
         text-align: left;
+    }
+
+    #info .feature:not(.last) {
+        margin-bottom: 0;
     }
 
     #info .feature p {
         max-width: 100%;
+    }
+
+    #data #table {
+        margin-left: -15px;
+        margin-right: -15px;
+        max-width: calc(100% + 30px);
     }
 
     #data #table hr.last {
@@ -786,18 +788,18 @@ footer .bottom-right a {
     }
 
     #teams .carousel::before {
+        color: grey;
         content: "←";
         font-size: 30px;
-        color: grey;
-        position: absolute;
         left: 0;
+        position: absolute;
         top: 35%;
     }
 
     #teams .carousel::after {
+        color: grey;
         content: "→";
         font-size: 30px;
-        color: grey;
         position: absolute;
         right: 0;
         top: 35%;
@@ -807,17 +809,23 @@ footer .bottom-right a {
         text-align: left;
     }
 
+    #cta .left h2 {
+        height: 60px;
+        line-height: 60px;
+    }
+
     #cta .right {
+        margin-top: 0;
         text-align: right;
     }
 }
 
 @media screen and (min-width: 1024px) {
     header {
-        position: fixed;
-        width: 100%;
-        top: 0;
         left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
         z-index: 1;
     }
 
@@ -829,12 +837,20 @@ footer .bottom-right a {
         padding-top: 257px;
     }
 
+    section {
+        padding: 120px 0;
+    }
+
     footer .menu {
         padding-left: 140px;
     }
 }
 
 @media screen and (min-width: 1090px) {
+    .navbar-header {
+        float: left;
+    }
+
     .navbar-toggle {
         display: none;
     }
@@ -842,9 +858,12 @@ footer .bottom-right a {
     .navbar-collapse.collapse {
         display: block!important;
     }
+}
 
-    .navbar-header {
-        float: left;
+@media screen and (min-width: 1200px) {
+    #developers .intro {
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 /* ----- Fine media queries ----- */
