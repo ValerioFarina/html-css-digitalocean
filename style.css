@@ -592,6 +592,91 @@ section .intro p {
 }
 /* ----- Fine sezione cta ----- */
 
+/* ----- Inizio footer ----- */
+footer {
+    padding: 48px 0;
+    background-color: rgb(1, 14, 40);
+}
+
+footer .menu .sub-menu {
+    width: 100%;
+    padding: 12px;
+}
+
+footer .menu h6 {
+    color: white;
+    margin: 0 0 24px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer .menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .menu ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer hr {
+    border: 0;
+    border-bottom: 1px solid #eeeeee3b;
+    margin: 30px 0;
+}
+
+footer .bottom-left {
+    max-width: 370px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    width: 50px;
+    margin: 0 20px 0 10px;
+}
+
+footer .logo img {
+    width: 100%;
+}
+
+footer .copyright {
+    width: calc(100% - 80px);
+    text-align: left;
+}
+
+footer .copyright p {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 15px 0;
+    margin: 0;
+}
+
+footer .bottom-right {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer .bottom-right a {
+    display: inline-block;
+}
+
+footer .bottom-right a {
+    margin-right: 10px;
+}
+/* ----- Fine footer ----- */
+
 /* ----- Inizio media queries ----- */
 @media screen and (min-width: 390px) {
     #teams .carousel .box .logo img {
@@ -601,12 +686,9 @@ section .intro p {
     #cta h2 {
         line-height: 60px;
     }
-}
 
-@media screen and (min-width: 468px) {
-    #data #table {
-        max-width: 455px;
-        margin: auto;
+    footer .menu .sub-menu {
+        width: 50%;
     }
 }
 
@@ -625,9 +707,19 @@ section .intro p {
         border-left: 2px solid #f3f5f9;
     }
 
-    #data #table {
-        max-width: 100%;
+    footer .menu .sub-menu {
+        width: 20%;
     }
+
+    footer .bottom-left {
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    footer .bottom-right {
+        text-align: right;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -680,6 +772,10 @@ section .intro p {
 
     .jumbotron {
         padding-top: 257px;
+    }
+
+    footer .menu {
+        padding-left: 140px;
     }
 }
 
