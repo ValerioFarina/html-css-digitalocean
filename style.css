@@ -337,10 +337,11 @@ section .intro p {
 }
 
 .feature {
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .feature img {
+    height: 40px;
     margin: 15px 0 20px 0;
 }
 
@@ -354,6 +355,7 @@ section .intro p {
     color: rgba(3, 27, 78, 0.6);
     font-size: 17px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 /* ----- Fine sezione features ----- */
 
