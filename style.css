@@ -402,7 +402,7 @@ section .intro p {
 
 /* ----- Inizio sezione info ----- */
 #info .feature:not(.last) {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 #info .feature p {
